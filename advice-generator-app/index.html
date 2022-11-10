@@ -19,26 +19,30 @@
 </head>
 <body>
 
-  <h1 class="hidden">Random advice generator</h1>
+  <main>
+    <h1 class="hidden">Random advice generator</h1>
 
-  <article class="card">
-    <p class="number">Advice #<span>0</span></p>
-    <blockquote class="content">" <span>Click on the dice to get a random advice</span> "</blockquote>
+    <article class="card">
+      <p class="number">Advice #<span>0</span></p>
+      <blockquote class="content">" <span>Click on the dice to get a random advice</span> "</blockquote>
 
-    <picture>
-      <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
-      <img src="./images/pattern-divider-mobile.svg" alt="Divider" class="divider">
-    </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+        <img src="./images/pattern-divider-mobile.svg" alt="Divider" class="divider">
+      </picture>
 
-    <div class="dice" title="Click to throw the dice" onclick="getAdvice()">
-      <img src="./images/icon-dice.svg" alt="Green dice icon">
+      <div class="dice" title="Click to throw the dice" onclick="getAdvice()">
+        <img src="./images/icon-dice.svg" alt="Green dice icon">
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/kilelx" target="_blank">kilelx</a>.
     </div>
-  </article>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/kilelx" target="_blank">kilelx</a>.
-  </div>
+  </footer>
 
   <script src="./script.js" type="text/javascript"></script>
 </body>
