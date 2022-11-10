@@ -1,0 +1,1 @@
+(View all my challenges)[]
