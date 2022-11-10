@@ -1,0 +1,6 @@
+ /* Landscape phone to portrait tablet */
+ @mixin xl {
+   @media (min-width: 767px) {
+     @content;
+   }
+ }
