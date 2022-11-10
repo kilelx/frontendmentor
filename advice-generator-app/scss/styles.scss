@@ -27,6 +27,9 @@ body {
     text-align: center;
     max-width: 55rem;
     position: relative;
+    animation: apparition 1s forwards;
+    transform: translateY(30px);
+    opacity: 0;
     .number {
         font-size: 1.2rem;
         letter-spacing: .3rem;
@@ -41,14 +44,9 @@ body {
             font-size: 2.8rem;
         }
     }
-    .svg-container {
-        &-content {
-        }
+    .divider {
+        margin: 1.2rem auto;
     }
-    // .divider {
-    //     margin: 3.5rem;
-    //     width: 100%;
-    // }
     .dice {
         width: fit-content;
         background-color: $neon-green;
@@ -83,6 +81,16 @@ body {
                 animation: throwDice .5s ease-in-out;
             }
         }
+    }
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 

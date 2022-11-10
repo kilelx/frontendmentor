@@ -11,9 +11,15 @@ const getAdvice = () => {
             }
         })
         .then(adviceObj => {
-            console.log(adviceObj);
             id.innerText = adviceObj.slip.id;
             advice.innerText = adviceObj.slip.advice;
+            dice.classList.add("disabled");
+            diceImg.classList.add("animation");
+            setTimeout(requestClear, 2000)
+        })
+        .catch(err => {
+            id.innerText = "404";
+            advice.innerText = "Oops, something went wrong...";
             dice.classList.add("disabled");
             diceImg.classList.add("animation");
             setTimeout(requestClear, 2000)

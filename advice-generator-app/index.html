@@ -13,7 +13,7 @@
 
   <!-- LINKING CSS SHEETS -->
   <link rel="stylesheet" href="styles.css">
-  
+
   <title>Frontend Mentor | Advice generator app</title>
 
 </head>
@@ -23,19 +23,21 @@
 
   <article class="card">
     <p class="number">Advice #<span>0</span></p>
-    <h2 class="content">" <span>Click on the dice to get a random advice</span> "</h2>
+    <blockquote class="content">" <span>Click on the dice to get a random advice</span> "</blockquote>
 
-    <img src="./images/" alt="">
+    <picture>
+      <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+      <img src="./images/pattern-divider-mobile.svg" alt="Divider" class="divider">
+    </picture>
 
     <div class="dice" title="Click to throw the dice" onclick="getAdvice()">
       <img src="./images/icon-dice.svg" alt="Green dice icon">
     </div>
   </article>
 
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">kilelx</a>.
+    Challenge by <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/kilelx" target="_blank">kilelx</a>.
   </div>
 
   <script src="./script.js" type="text/javascript"></script>
